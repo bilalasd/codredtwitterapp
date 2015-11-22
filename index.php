@@ -66,6 +66,10 @@ foreach ($data->tweets as $value){
 $counter = $counter + 1;
 }
 
+
+foreach ($lat as $value){
+  echo $value."<br>";
+}
 ?>
 <html>
 
