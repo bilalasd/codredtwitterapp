@@ -54,7 +54,7 @@
 </html>
 <?php
 
-$data = json_decode(file_get_contents('https://93b18000-37fe-479a-ac00-1a163f963bf7:lVZJbq2xyT@cdeservice.mybluemix.net/api/v1/messages/search?q=%23news&size=500'));
+$data = json_decode(file_get_contents('https://93b18000-37fe-479a-ac00-1a163f963bf7:lVZJbq2xyT@cdeservice.mybluemix.net/api/v1/messages/search?q=%23news&size=100'));
 
 
 $latArr = array();
