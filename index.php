@@ -83,13 +83,13 @@ foreach ($data->tweets as $value){
 
 }
 
-/*foreach($latArr as $val){
+foreach($latArr as $val){
   echo $val."<br>";
 }
 
 foreach($lngArr as $val){
   echo $val."<br>";
-}*/
+}
 
 //echo json_encode($latArr);
 //echo json_encode($lngArr);
