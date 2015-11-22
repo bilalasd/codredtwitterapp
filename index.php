@@ -10,7 +10,7 @@ $settings = array(
 );
 
 $url = 'https://api.twitter.com/1.1/search/tweets.json';
-$getfield = '?q=#nerd';
+$getfield = '?q=#twitterapi';
 $requestMethod = 'GET';
 
 $twitter = new TwitterAPIExchange($settings);
