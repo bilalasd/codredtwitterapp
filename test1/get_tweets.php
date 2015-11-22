@@ -1,11 +1,11 @@
 <?php
 require_once('twitter_proxy.php');
 // Twitter OAuth Config options
-$oauth_access_token = 'your-token-here';
-$oauth_access_token_secret = 'your-token-secret';
-$consumer_key = 'your-api-key';
-$consumer_secret = 'your-api-secret';
-$user_id = '78884300';
+$oauth_access_token = '22417002-sjVPWcCXuobP5fvb4NIQSv3KiKUakWHgFoHBuAsoZ';
+$oauth_access_token_secret = 'DUmRu3JYS8uygtRUKxcLhCVkbCY96g7cZSh2WQVut6rxg';
+$consumer_key = 'cLBOUhBAhNBofJPhRGVuWOBWf';
+$consumer_secret = 'CUMtdeX91Z0JwpY6Jq0X90aZvwW10MeSiLZ7jEcIAmw2nhMYa2';
+$user_id = 'bilalasd';
 $screen_name = 'parallax';
 $count = 5;
 $twitter_url = 'statuses/user_timeline.json';
