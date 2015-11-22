@@ -10,7 +10,7 @@
     $hashtagparam = $_GET['hashtag'];
     $numberparam = $_GET['number'];
     
-    echo "https://93b18000-37fe-479a-ac00-1a163f963bf7:lVZJbq2xyT@cdeservice.mybluemix.net/api/v1/messages/search?q=%23asdasdasd&size=19";
+   // echo "https://93b18000-37fe-479a-ac00-1a163f963bf7:lVZJbq2xyT@cdeservice.mybluemix.net/api/v1/messages/search?q=%23asdasdasd&size=19";
 
     ?>
     
