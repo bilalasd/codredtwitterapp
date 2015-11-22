@@ -44,13 +44,13 @@
 $data = json_decode(file_get_contents('https://e8108483-560b-47ad-8a92-a4b67e43a2fa:SN4DCNwzwT@cdeservice.mybluemix.net/api/v1/messages/search?q=%23asd&size=10'));
 
 
-//for each tweet, get data
+/*for each tweet, get data*/
 $counter = 0;
 foreach ($data->tweets as $value){
   $city = $value->cde->author->location->city;
   $state = $value->cde->author->location->state;
   $country = $value->cde->author->location->country;
- // if(country == 'United States'){
+
     if(!empty($state) || !empty($city)){
       //echo "city".$city;
       //echo " ";
@@ -65,7 +65,7 @@ foreach ($data->tweets as $value){
       //echo $lat." ".$lng."<br>";
     }
  
-}
+
 $counter = $counter + 1;
 }
 
