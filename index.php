@@ -147,11 +147,11 @@ function getPoints() {
   var lngArr = <?php echo json_encode($lngArr); ?>;
   var latArr = <?php echo json_encode($latArr); ?>;
 
-  return [ <?php for($i=0;$i<count($lngArr);$i++)
+  return [ <?php for($i=0;$i<count($lngArr)-1;$i=$i+1)
   {
-    echo "new google.maps.LatLng(".$latArr[$i].",".$lngArr[$i]."),";
+    echo "new google.maps.LatLng($latArr[$i],$lngArr[$i]),";
   }
-   echo "new google.maps.LatLng(".$latArr[count($latArr)-1].",".$lngArr[count($lngArr)-1].")";
+   echo "new google.maps.LatLng($latArr[count($latArr)],$lngArr[count($lngArr)])";
    ?>];
 }
 
