@@ -151,9 +151,9 @@ function getPoints() {
 
   return [ <?php for($i=0;$i<count($lngArr)-1;$i++)
   {
-    echo "new google.maps.LatLng($latArr[$i],$lngArr[$i]),";
+    echo "new google.maps.LatLng(".$latArr[$i].",".$lngArr[$i]."),";
   }
-   echo "new google.maps.LatLng($latArr[count($latArr)-1],$lngArr[count($lngArr)-1])";
+   echo "new google.maps.LatLng(".$latArr[count($latArr)-1].",".$lngArr[count($lngArr)-1].")";
    ?>];
 }
 
