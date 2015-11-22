@@ -66,6 +66,7 @@ foreach ($data->tweets as $value){
  
 
 $counter = $counter + 1;
+echo $counter;
 }
 
 
