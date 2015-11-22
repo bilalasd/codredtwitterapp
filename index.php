@@ -69,9 +69,8 @@ foreach ($data->tweets as $value){
 $counter++;
 }
 
-foreach($lngArr as $values){
-  echo $values;
-}
+echo json_encode($lngArr);;
+
 
 
 ?>
