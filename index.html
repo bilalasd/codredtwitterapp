@@ -44,7 +44,7 @@
 $data = json_decode(file_get_contents('https://e8108483-560b-47ad-8a92-a4b67e43a2fa:SN4DCNwzwT@cdeservice.mybluemix.net/api/v1/messages/search?q=%23asd&size=10'));
 
 
-/*for each tweet, get data*/
+
 $counter = 0;
 foreach ($data->tweets as $value){
   $city = $value->cde->author->location->city;
@@ -52,17 +52,14 @@ foreach ($data->tweets as $value){
   $country = $value->cde->author->location->country;
 
     if(!empty($state) || !empty($city)){
-      //echo "city".$city;
-      //echo " ";
-      //echo "state".$state;
-      //echo " <br>";
+
       
       
-      //geocode
+
       $geocodedData = json_decode(file_get_contents('https://maps.googleapis.com/maps/api/geocode/json?address='.$city.','.'$state.&key=AIzaSyAg2T1zc4lXqSYzOIv2AgYMzKu0w80wmTI'));
       $lat[counter] = $geocodedData->results[0]->geometry->location->lat;
       $lng[counter] = $geocodedData->results[0]->geometry->location->lng;
-      //echo $lat." ".$lng."<br>";
+
     }
  
 
