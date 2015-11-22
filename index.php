@@ -2,14 +2,14 @@
 <html>
   <head>
     
-    <INPUT TYPE = "Text" VALUE ="text" NAME = "hashtag">;
-    <INPUT TYPE = "Text" VALUE ="text" NAME = "number">;
+    <INPUT TYPE = "Text" VALUE ="text" NAME = "hashtag">
+    <INPUT TYPE = "Text" VALUE ="text" NAME = "number">
+    <input type="submit" name="button" value="insert" onclick="" />
+    
     <?php
     $hashtagparam = $_GET['hashtag'];
     $numberparam = $_GET['number'];
-    
-    echo $hashtagparam;
-    echo $numberparam;
+
     ?>
     
     <meta charset="utf-8">
@@ -52,7 +52,7 @@
 </html>
 <?php
 
-$data = json_decode(file_get_contents('https://e8108483-560b-47ad-8a92-a4b67e43a2fa:SN4DCNwzwT@cdeservice.mybluemix.net/api/v1/messages/search?q=%23asd&size=10'));
+$data = json_decode(file_get_contents('https://e8108483-560b-47ad-8a92-a4b67e43a2fa:SN4DCNwzwT@cdeservice.mybluemix.net/api/v1/messages/search?q=%23'.$hashtagparam.'&size='.$numberparam.'));
 
 
 $latArr = array();
