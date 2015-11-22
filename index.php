@@ -69,7 +69,7 @@ foreach ($data->tweets as $value){
 $counter++;
 }
 
-foreach($lng as $values){
+foreach($lngArr as $values){
   echo $values;
 }
 
