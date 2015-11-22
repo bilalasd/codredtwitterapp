@@ -17,6 +17,6 @@ $getfield = '?screen_name=iagdotme&count=20';
  
 $twitter = new TwitterAPIExchange($settings);
 echo $twitter->setGetfield($getfield)
-             ->buildOauth($url, $requestMethod)
+             /*->buildOauth($url, $requestMethod)
              ->performRequest();*/
 ?>
