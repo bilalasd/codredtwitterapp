@@ -8,7 +8,20 @@ $settings = array(
     'consumer_key' => "22417002-sjVPWcCXuobP5fvb4NIQSv3KiKUakWHgFoHBuAsoZ",
     'consumer_secret' => "DUmRu3JYS8uygtRUKxcLhCVkbCY96g7cZSh2WQVut6rxg"
 );
- 
+
+$url = 'https://api.twitter.com/1.1/search/tweets.json';
+$getfield = '?q=#nerd';
+$requestMethod = 'GET';
+
+$twitter = new TwitterAPIExchange($settings);
+$response = $twitter->setGetfield($getfield)
+    ->buildOauth($url, $requestMethod)
+    ->performRequest();
+
+var_dump(json_decode($response));
+
+
+ /*
 $url = "https://api.twitter.com/1.1/statuses/user_timeline.json";
  
 $requestMethod = "GET";
@@ -16,7 +29,7 @@ $requestMethod = "GET";
 $getfield = '?screen_name=iagdotme&count=20';
  
 $twitter = new TwitterAPIExchange($settings);
-echo $twitter/*->setGetfield($getfield)*/
+echo $twitter/*->setGetfield($getfield)
              ->buildOauth($url, $requestMethod)
-             ->performRequest();
+             ->performRequest();*/
 ?>
