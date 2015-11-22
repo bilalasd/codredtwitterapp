@@ -13,8 +13,14 @@ foreach ($data->tweets as $value){
       echo " ";
       echo "state".$state;
       echo " <br>";
+      
+      
+      //geocode
+      $geocodedData = json_decode(file_get_contents('https://maps.googleapis.com/maps/api/geocode/json?address=houston,tx&key=AIzaSyAg2T1zc4lXqSYzOIv2AgYMzKu0w80wmTI'));
+      $lat = $geocodedData->results[0]->geometry->location->lat;
+      $lng = $geocodedData->results[0]->geometry->location->lng;
+      
     }
-  
  // }
 }
 //----
