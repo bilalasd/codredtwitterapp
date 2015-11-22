@@ -10,7 +10,7 @@
         padding: 0;
       }
       #map {
-        height: 50%;
+        height: 100%;
       }
 #floating-panel {
   position: absolute;
@@ -69,6 +69,13 @@ foreach ($data->tweets as $value){
 $counter++;
 }
 
+foreach($latArr as $val){
+  echo $val."-"
+}
+
+foreach($lngArr as $val){
+  echo $val."<br>"
+}
 
 
 ?>
