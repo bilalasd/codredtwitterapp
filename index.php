@@ -1,7 +1,7 @@
 <?php
-/*require_once('TwitterAPIExchange.php');*/
+/**require_once('TwitterAPIExchange.php');
  
-/** Set access tokens here - see: https://dev.twitter.com/apps/ **/
+/** Set access tokens here - see: https://dev.twitter.com/apps/ 
 $settings = array(
     'oauth_access_token' => "YOUR_OAUTH_ACCESS_TOKEN",
     'oauth_access_token_secret' => "YOUR_OAUTH_ACCESS_TOKEN_SECRET",
@@ -18,5 +18,5 @@ $getfield = '?screen_name=iagdotme&count=20';
 $twitter = new TwitterAPIExchange($settings);
 echo $twitter->setGetfield($getfield)
              ->buildOauth($url, $requestMethod)
-             ->performRequest();
+             ->performRequest();*/
 ?>
