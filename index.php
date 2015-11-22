@@ -144,8 +144,6 @@ function changeOpacity() {
 // Heatmap data: 500 Points
 function getPoints() {
   var returnArr;
-  var lngArr = <?php echo json_encode($lngArr); ?>;
-  var latArr = <?php echo json_encode($latArr); ?>;
 
   return [ <?php for($i=0;$i<count($lngArr)-1;$i++)
   {
