@@ -25,8 +25,3 @@ foreach ($data->tweets as $value){
 }
 //----
 ?>
-<script type="text/javascript"
-  src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=visualization&sensor=true_or_false">
-</script>
-<?php
-?>
