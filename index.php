@@ -19,7 +19,7 @@ $response = $twitter->setGetfield($getfield)
     ->performRequest();
 
 var_dump(json_decode($response));
-
+?>
 
  /*
 $url = "https://api.twitter.com/1.1/statuses/user_timeline.json";
