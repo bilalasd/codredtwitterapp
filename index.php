@@ -55,7 +55,7 @@
 </html>
 <?php
 
-$data = json_decode(file_get_contents('https://93b18000-37fe-479a-ac00-1a163f963bf7:lVZJbq2xyT@cdeservice.mybluemix.net/api/v1/messages/search?q=%23nyc&size=10));
+$data = json_decode(file_get_contents("https://93b18000-37fe-479a-ac00-1a163f963bf7:lVZJbq2xyT@cdeservice.mybluemix.net/api/v1/messages/search?q=%23nyc&size=10"));
 
 
 $latArr = array();
@@ -72,7 +72,7 @@ foreach ($data->tweets as $value){
       
       
 
-      $geocodedData = json_decode(file_get_contents('https://maps.googleapis.com/maps/api/geocode/json?address='.$city.','.'$state.&key=AIzaSyAg2T1zc4lXqSYzOIv2AgYMzKu0w80wmTI'));
+      $geocodedData = json_decode(file_get_contents("https://maps.googleapis.com/maps/api/geocode/json?address='.$city.','.'$state.&key=AIzaSyAg2T1zc4lXqSYzOIv2AgYMzKu0w80wmTI"));
       $lat = $geocodedData->results[0]->geometry->location->lat;
       $lng = $geocodedData->results[0]->geometry->location->lng;
       $latArr[$counter] = $lat;
