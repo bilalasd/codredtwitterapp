@@ -4,7 +4,7 @@
     
     <INPUT TYPE = "Text" VALUE ="text" NAME = "hashtag">
     <INPUT TYPE = "Text" VALUE ="text" NAME = "number">
-    <input type="submit" name="button" value="insert" onclick="" />
+    
     
     <?php
     $hashtagparam = $_GET['hashtag'];
