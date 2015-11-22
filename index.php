@@ -8,14 +8,13 @@ foreach ($data->tweets as $value){
   $state = $value->cde->author->location->state;
   $country = $value->cde->author->location->country;
  // if(country == 'United States'){
-    if(empty($state) || empty($city)){
+    if(!empty($state) || !empty($city)){
     }
-    else{
       echo "city".$city;
       echo " ";
       echo "state".$state;
       echo " <br>";
-    }
+    
   
  // }
 }
