@@ -21,9 +21,11 @@ foreach ($data->tweets as $value){
       $lng = $geocodedData->results[0]->geometry->location->lng;
       //echo $lat." ".$lng."<br>";
     }
- // }
+ 
 }
 //----
 
-//echo $data->tweets[0]->cde->author->gender;
+<script type="text/javascript"
+  src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=visualization&sensor=true_or_false">
+</script>
 ?>
