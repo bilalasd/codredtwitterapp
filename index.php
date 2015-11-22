@@ -70,7 +70,7 @@ $counter++;
 }
 
 foreach($latArr as $val){
-  echo $val."-";
+  echo $val."<br>";
 }
 
 foreach($lngArr as $val){
