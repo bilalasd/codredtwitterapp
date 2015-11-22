@@ -63,10 +63,10 @@ foreach ($data->tweets as $value){
       $lng = $geocodedData->results[0]->geometry->location->lng;
       $latArr[$counter] = $lat;
       $lngArr[$counter] = $lng;
-
+      $counter++;
     }
  
-$counter++;
+
 }
 
 foreach($latArr as $val){
