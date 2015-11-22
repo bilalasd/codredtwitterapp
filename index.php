@@ -10,15 +10,23 @@ $settings = array(
 );
 
 $url = 'https://api.twitter.com/1.1/search/tweets.json';
-$getfield = '?q=%40twitterapi';
-$requestMethod = 'GET';
+$requestMethod = 'POST';
+$postfields = array(
+    'screen_name' => 'usernameToBlock', 
+    'skip_status' => '1'
+);
+/*$getfield = '?q=%40twitterapi';*/
+$twitter = new TwitterAPIExchange($settings);
+echo $twitter->buildOauth($url, $requestMethod)
+    ->setPostfields($postfields)
+    ->performRequest();/*
 
 $twitter = new TwitterAPIExchange($settings);
 $response = $twitter->setGetfield($getfield)
     ->buildOauth($url, $requestMethod)
     ->performRequest();
 
-var_dump(json_decode($response));
+var_dump(json_decode($response));*/
 ?>
 
  /*
