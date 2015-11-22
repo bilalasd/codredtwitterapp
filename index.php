@@ -11,7 +11,7 @@
     $hashtagparam = $_GET['hashtag'];
     $numberparam = $_GET['number'];
     
-    echo "https://e8108483-560b-47ad-8a92-a4b67e43a2fa:SN4DCNwzwT@cdeservice.mybluemix.net/api/v1/messages/search?q=%23".$hashtagparam."&size=".$numberparam;
+    echo "https://93b18000-37fe-479a-ac00-1a163f963bf7:lVZJbq2xyT@cdeservice.mybluemix.net/api/v1/messages/search?q=%23".$hashtagparam."&size=".$numberparam;
 
     ?>
     
@@ -55,7 +55,7 @@
 </html>
 <?php
 
-$data = json_decode(file_get_contents('https://e8108483-560b-47ad-8a92-a4b67e43a2fa:SN4DCNwzwT@cdeservice.mybluemix.net/api/v1/messages/search?q=%23'.$hashtagparam.'&size='.$numberparam));
+$data = json_decode(file_get_contents('https://93b18000-37fe-479a-ac00-1a163f963bf7:lVZJbq2xyT@cdeservice.mybluemix.net/api/v1/messages/search?q=%23'.$hashtagparam.'&size='.$numberparam));
 
 
 $latArr = array();
