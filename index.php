@@ -9,9 +9,9 @@ $settings = array(
     'consumer_secret' => "YOUR_CONSUMER_SECRET"
 );
  
-/*$url = "https://api.twitter.com/1.1/statuses/user_timeline.json";
+$url = "https://api.twitter.com/1.1/statuses/user_timeline.json";
  
-$requestMethod = "GET";
+/*$requestMethod = "GET";
  
 $getfield = '?screen_name=iagdotme&count=20';
  
