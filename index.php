@@ -4,13 +4,13 @@
     
     <INPUT TYPE = "Text" VALUE ="text" NAME = "hashtag">;
     <INPUT TYPE = "Text" VALUE ="text" NAME = "number">;
-    
+    <?php
     $hashtagparam = $_GET['hashtag'];
     $numberparam = $_GET['number'];
     
     echo $hashtagparam;
     echo $numberparam;
-    
+    ?>
     
     <meta charset="utf-8">
     <title>Heatmaps</title>
