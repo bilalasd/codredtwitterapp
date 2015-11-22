@@ -13,7 +13,7 @@ $url = "https://api.twitter.com/1.1/statuses/user_timeline.json";
  
 $requestMethod = "GET";
  
-$getfield = '?screen_name=bilalasd&count=20';
+$getfield = '?q=%23freebandnames&since_id=24012619984051000&max_id=250126199840518145&result_type=mixed&count=4';
  
 $twitter = new TwitterAPIExchange($settings);
 echo $twitter->setGetfield($getfield)
