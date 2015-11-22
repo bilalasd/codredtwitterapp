@@ -44,8 +44,8 @@
 $data = json_decode(file_get_contents('https://e8108483-560b-47ad-8a92-a4b67e43a2fa:SN4DCNwzwT@cdeservice.mybluemix.net/api/v1/messages/search?q=%23asd&size=10'));
 
 
-$lat = array();
-$lng = array();
+$latArr = array();
+$lngArr = array();
 
 $counter = 0;
 foreach ($data->tweets as $value){
@@ -61,13 +61,18 @@ foreach ($data->tweets as $value){
       $geocodedData = json_decode(file_get_contents('https://maps.googleapis.com/maps/api/geocode/json?address='.$city.','.'$state.&key=AIzaSyAg2T1zc4lXqSYzOIv2AgYMzKu0w80wmTI'));
       $lat = $geocodedData->results[0]->geometry->location->lat;
       $lng = $geocodedData->results[0]->geometry->location->lng;
-      echo $lat;
-      echo $lng;
+      $latArr[counter] = $lat;
+      $lngArr[counter] = $lng;
 
     }
  
-
+$counter++;
 }
+
+foreach($lng as $values){
+  echo $values;
+}
+
 
 ?>
 <html>
