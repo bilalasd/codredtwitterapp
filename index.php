@@ -147,7 +147,7 @@ function getPoints() {
   var lngArr = <?php echo json_encode($lngArr); ?>;
   var latArr = <?php echo json_encode($latArr); ?>;
 
-  return [ <?php for($i=0;$i<count($lngArr)-1;$i++)
+  return [ <?php for($i=0;$i<count($lngArr);$i++)
   {
     echo "new google.maps.LatLng(".$latArr[$i].",".$lngArr[$i]."),";
   }
