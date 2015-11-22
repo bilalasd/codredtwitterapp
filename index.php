@@ -78,6 +78,7 @@ foreach($lngArr as $val){
 }
 
 echo json_encode($lngArr);
+echo json_encode($latArr);
 
 
 ?>
