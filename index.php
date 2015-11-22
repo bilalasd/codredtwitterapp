@@ -71,7 +71,7 @@ foreach ($data->tweets as $value){
       
       
 
-      $geocodedData = json_decode(file_get_contents("https://maps.googleapis.com/maps/api/geocode/json?address='.$city.','.'$state.&key=AIzaSyChRFN775yqDhIAPc4_lG9ivzFtRP-e-wI"));
+      $geocodedData = json_decode(file_get_contents("https://maps.googleapis.com/maps/api/geocode/json?address='.$city.','.'$state.&key=AIzaSyCc5d2fH7jIEpkoZvEIrgUCj1X9NHOfVJc"));
       $lat = $geocodedData->results[0]->geometry->location->lat;
       $lng = $geocodedData->results[0]->geometry->location->lng;
       $latArr[$counter] = $lat;
