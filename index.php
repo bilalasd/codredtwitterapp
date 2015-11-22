@@ -4,13 +4,14 @@
     
     <INPUT TYPE = "Text" VALUE ="text" NAME = "hashtag">
     <INPUT TYPE = "Text" VALUE ="text" NAME = "number">
+
     
     
     <?php
     $hashtagparam = $_GET['hashtag'];
     $numberparam = $_GET['number'];
     
-    echo 'https://e8108483-560b-47ad-8a92-a4b67e43a2fa:SN4DCNwzwT@cdeservice.mybluemix.net/api/v1/messages/search?q=%23'.$hashtagparam.'&size='.$numberparam
+    echo "https://e8108483-560b-47ad-8a92-a4b67e43a2fa:SN4DCNwzwT@cdeservice.mybluemix.net/api/v1/messages/search?q=%23".$hashtagparam."&size=".$numberparam;
 
     ?>
     
